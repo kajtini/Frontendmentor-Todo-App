@@ -23,10 +23,10 @@ const AddTodoForm = ({ setTodos }: AddTodoFormProps) => {
 
     return (
         <form
-            className="px-5 py-4 bg-light-very-light-gray rounded-lg flex gap-4 items-center shadow-sm"
+            className="px-5 py-4 bg-light-very-light-gray rounded-lg flex gap-4 items-center shadow-sm lg:text-xl lg:p-5 dark:bg-dark-very-dark-desaturated-blue"
             onSubmit={handleAddTodoSubmit}
         >
-            <div className="border border-light-light-grayish-blue p-2  rounded-full" />
+            <div className="border border-light-light-grayish-blue w-6 h-6  rounded-full shrink-0 dark:border-dark-very-dark-grayish-blue" />
 
             <input
                 className="w-full bg-transparent focus:outline-none"

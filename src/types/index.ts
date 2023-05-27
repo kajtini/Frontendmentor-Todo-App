@@ -3,3 +3,5 @@ export interface Todo {
     description: string;
     status: "completed" | "active";
 }
+
+export type TodosFilter = "all" | "active" | "completed";

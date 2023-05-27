@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: "class",
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
@@ -30,6 +31,7 @@ export default {
             backgroundImage: {
                 "desktop-dark": "url('./assets/bg-desktop-dark.jpg')",
                 "mobile-dark": "url('./assets/bg-mobile-dark.jpg')",
+                "desktop-light": "url('./assets/bg-desktop-light.jpg')",
                 "mobile-light": "url('./assets/bg-mobile-light.jpg')",
             },
         },

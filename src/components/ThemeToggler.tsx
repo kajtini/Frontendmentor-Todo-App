@@ -1,11 +1,21 @@
 import sun from "../assets/icon-sun.svg";
 import moon from "../assets/icon-moon.svg";
 
-const ThemeToggler = () => {
+interface ThemeTogglerProps {
+    isDark: boolean;
+    setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const ThemeToggler = ({ isDark, setIsDark }: ThemeTogglerProps) => {
+    const handleThemeToggle = () => setIsDark((prevIsDark) => !prevIsDark);
+
     return (
-        <div>
-            <img src={moon} alt="moon icon" />
-        </div>
+        <img
+            className="cursor-pointer"
+            src={isDark ? sun : moon}
+            alt={`${isDark ? "sun" : "moon"} icon`}
+            onClick={handleThemeToggle}
+        />
     );
 };
 
